@@ -437,9 +437,9 @@ const PositionOverview = ({ position, isExpanded, handleShowExpanded }: Props) =
             </Badge>
           </Name>
           <PositionIDLink href={`https://app.uniswap.org/#/pool/${tokenId}`} target="_blank" rel="noreferrer noopener">
-            <Badge style={{ marginRight: '8px' }}>
+            {/* <Badge style={{ marginRight: '8px' }}>
               <BadgeText>{`ID: ${tokenId}`}</BadgeText>
-            </Badge>
+            </Badge> */}
           </PositionIDLink>
           <RangeBadge removed={removed} inRange={inRange} />
         </NameAndStatus>
@@ -449,12 +449,12 @@ const PositionOverview = ({ position, isExpanded, handleShowExpanded }: Props) =
             <SwitchIcon icon="SWITCH" color={theme.text3} size={14} />
           </RateToggleButtonDesktop>
         )}
-        <ExpandButtonDesktop onClick={() => handleShowExpanded()}>
+        {/* <ExpandButtonDesktop onClick={() => handleShowExpanded()}>
           {isExpanded ? 'Show Less' : 'Show More'}
           <ExpandIconWrapper>
             <Icon icon={isExpanded ? 'ARROW_UP' : 'ARROW_DOWN'} size={20} color={theme.primary1} />
           </ExpandIconWrapper>
-        </ExpandButtonDesktop>
+        </ExpandButtonDesktop> */}
       </FirstRow>
       <SecondRow>
         <LiquidityCard chainId={1} position={position} ratio={ratio} />
@@ -485,18 +485,18 @@ const PositionOverview = ({ position, isExpanded, handleShowExpanded }: Props) =
           currencyQuote={currencyQuote}
         />
       </SecondRow>
-      {currencyBase && currencyQuote && (
-        <RateToggleButtonMobile onClick={() => setManuallyInverted(!manuallyInverted)}>
-          Switch price
-          <SwitchIcon icon="SWITCH" color={theme.text3} size={14} />
-        </RateToggleButtonMobile>
-      )}
-      <ExpandButtonMobile onClick={() => handleShowExpanded()}>
+      {/* {currencyBase && currencyQuote && (
+        // <RateToggleButtonMobile onClick={() => setManuallyInverted(!manuallyInverted)}>
+        //   Switch price
+        //   <SwitchIcon icon="SWITCH" color={theme.text3} size={14} />
+        // </RateToggleButtonMobile>
+      )} */}
+      {/* <ExpandButtonMobile onClick={() => handleShowExpanded()}>
         {isExpanded ? 'Show Less' : 'Show More'}
         <ExpandIconWrapper>
           <Icon icon={isExpanded ? 'ARROW_UP' : 'ARROW_DOWN'} size={20} color={theme.primary1} />
         </ExpandIconWrapper>
-      </ExpandButtonMobile>
+      </ExpandButtonMobile> */}
     </Wrapper>
   )
 }

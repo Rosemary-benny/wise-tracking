@@ -237,9 +237,6 @@ const SearchSmall = ({ hideTokens = false, hidePools = false, ...rest }: Props) 
                 <OptionButton enabled={!showWatchlist} onClick={() => setShowWatchlist(false)}>
                   Search
                 </OptionButton>
-                <OptionButton enabled={showWatchlist} onClick={() => setShowWatchlist(true)}>
-                  Watchlist
-                </OptionButton>
               </RowFixed>
             </AutoColumn>
             {!hideTokens && (

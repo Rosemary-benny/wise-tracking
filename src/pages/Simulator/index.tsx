@@ -321,30 +321,6 @@ const Simulator = ({
             <PositionsTitle>Define positions</PositionsTitle>
             {positions.length > 0 && <PriceReferenceSwitch />}
           </PositionsHeadline>
-          <PositionsSelectorWrapper>
-            {/* TODO change the way how you render this. "positions" array will get re-render every time you change something in any of the positions */}
-            {/* Consider using something like React.memo */}
-            {positions.map((position, i) => (
-              <PositionWrapper key={position.id}>
-                <Position
-                  positionIndex={i}
-                  investmentUsd={position.investmentUsd}
-                  priceMin={position.priceMin}
-                  priceMax={position.priceMax}
-                  infiniteRangeSelected={position.infiniteRangeSelected}
-                />
-              </PositionWrapper>
-            ))}
-            <AddPositionButtonWrapper>
-              <AddPositionButton
-                onClick={() => {
-                  dispatch(addPosition())
-                }}
-              >
-                Add Position
-              </AddPositionButton>
-            </AddPositionButtonWrapper>
-          </PositionsSelectorWrapper>
           {/* TODO add overall positions overview */}
           <SimulationBoxAndChartWrapper>
             <SimulationBoxSectionWrapper>

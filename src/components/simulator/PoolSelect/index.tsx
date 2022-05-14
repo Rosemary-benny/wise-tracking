@@ -236,9 +236,6 @@ const PoolSelect = ({ ...rest }) => {
                 <OptionButton enabled={!showWatchlist} onClick={() => setShowWatchlist(false)}>
                   Search
                 </OptionButton>
-                <OptionButton enabled={showWatchlist} onClick={() => setShowWatchlist(true)}>
-                  Watchlist
-                </OptionButton>
               </RowFixed>
             </AutoColumn>
 

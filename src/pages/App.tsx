@@ -6,7 +6,6 @@ import Header from '../components/Header'
 import URLWarning from '../components/Header/URLWarning'
 import Popups from '../components/Popups'
 import DarkModeQueryParamReader from '../theme/DarkModeQueryParamReader'
-import Home from './Home'
 import Simulator from './Simulator'
 import Dashboard from './Dashboard'
 import LandingPage from './LandingPage'
@@ -114,7 +113,6 @@ export default function App() {
             <VMContext.Provider value={vm}>
               <Switch>
                 <Route exact strict path="/" component={LandingPage} />
-                <Route exact strict path="/overview" component={Home} />
                 <Route exact strict path="/simulator" component={Simulator} />
                 <Route exact strict path="/simulator/:address" component={Simulator} />
                 <Route exact strict path="/positions" component={Dashboard} />

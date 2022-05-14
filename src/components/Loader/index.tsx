@@ -80,7 +80,7 @@ export const LocalLoader = ({ fill }: { fill: boolean }) => {
   return (
     <Wrapper fill={fill ? 1 : 0}>
       <AnimatedImg>
-        <img src={v3} width="600" height="100" alt="loading-icon" />
+        <img src={v3} width="500" height="100" alt="loading-icon" />
       </AnimatedImg>
     </Wrapper>
   )

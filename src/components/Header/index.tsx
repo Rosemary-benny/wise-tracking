@@ -285,9 +285,6 @@ export default function Header(props: RouteComponentProps) {
             <StyledNavLink id={`stake-nav-link`} to={'/positions'}>
               My Positions
             </StyledNavLink>
-            <StyledNavLink id={`pool-nav-link`} to={'/overview'}>
-              Overview
-            </StyledNavLink>
             {/* <StyledNavLink id={`swap-nav-link`} to={'/protocol'}>
             Protocol
           </StyledNavLink> */}

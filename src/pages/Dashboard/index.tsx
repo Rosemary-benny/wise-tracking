@@ -29,13 +29,6 @@ const Header = styled(DarkCard)`
 `
 
 const Content = styled.div``
-
-const OpenAddressModalButton = styled(ButtonGray)`
-  width: 48px;
-  height: 48px;
-  margin-left: 16px;
-  align-self: flex-end;
-`
 const InputLabel = styled.div`
   color: ${({ theme }) => theme.text3};
   padding-left: 10px;
@@ -178,19 +171,6 @@ const Dashboard = ({
               <InputLabel>Ethereum Address</InputLabel>
               <AddressSelect urlAddress={address} />
             </AddressSelectWrapper>
-            <PoolSelectWrapper>
-              <InputLabel>Filter by pool</InputLabel>
-              <PoolSelect
-                value={poolSelected}
-                positions={positions}
-                onPoolSelect={(option: PoolOption) => {
-                  handlePoolSelect(option)
-                }}
-              />
-            </PoolSelectWrapper>
-            <OpenAddressModalButton onClick={toggleAddressesModal}>
-              <Icon icon="SETTINGS" size={20} color={theme.text1} />
-            </OpenAddressModalButton>
           </>
         )}
       </Header>
