@@ -12,7 +12,7 @@ import { useLayoutSize } from 'state/application/hooks'
 import styled from 'styled-components'
 import { isAddress } from 'utils'
 // import Logo from '../../assets/svg/logo.svg'
-import LogoDark from '../../assets/svg/croco_uni_logo_dark.svg'
+import LogoDark from '../../assets/svg/wise-tracker-logo.png'
 
 const NAVBAR_HEIGHT = '50px'
 

@@ -1,4 +1,4 @@
-import BannerImage from '../../assets/images/landing-page/landing-page-text-dark.svg'
+import BannerImage from '../../assets/images/landing-page/wise-tracker-logo.png'
 import React from 'react'
 import styled from 'styled-components'
 

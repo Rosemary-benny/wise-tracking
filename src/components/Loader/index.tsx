@@ -1,5 +1,5 @@
 import React from 'react'
-import v3 from '../../assets/images/croco_uni_logo_dark.svg'
+import v3 from '../../assets/images/wise-tracker-logo.png'
 import styled, { keyframes, css } from 'styled-components'
 
 const rotate = keyframes`
@@ -80,7 +80,7 @@ export const LocalLoader = ({ fill }: { fill: boolean }) => {
   return (
     <Wrapper fill={fill ? 1 : 0}>
       <AnimatedImg>
-        <img src={v3} alt="loading-icon" />
+        <img src={v3} width="600" height="100" alt="loading-icon" />
       </AnimatedImg>
     </Wrapper>
   )
