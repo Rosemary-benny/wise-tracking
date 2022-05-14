@@ -214,7 +214,7 @@ const LandingPage = (props: RouteComponentProps<any>) => {
               <Banner />
             </IllustrationWrapper>
             <SubBannerHeadline>
-              The best tool for{' '}
+              One Stop Tool for{' '}
               <UniLink href="https://uniswap.org/" target="_blank">
                 Uniswap v3
               </UniLink>{' '}

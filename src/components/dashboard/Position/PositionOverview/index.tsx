@@ -279,6 +279,15 @@ function PriceCard({
     </PriceCardWrapper>
   )
 }
+function RoeCard({ title, price, text }: { title: string; price?: any; text: string }) {
+  return (
+    <PriceCardWrapper>
+      <ExtentsText>{title}</ExtentsText>
+      <PriceNumber>{price}</PriceNumber>
+      <ExtentsText>Since Nov 2017</ExtentsText>
+    </PriceCardWrapper>
+  )
+}
 
 function LiquidityCard({
   position,
@@ -484,6 +493,7 @@ const PositionOverview = ({ position, isExpanded, handleShowExpanded }: Props) =
           currencyBase={currencyBase}
           currencyQuote={currencyQuote}
         />
+        <RoeCard title="ROE" price={'43%'} text="Since Nov 27" />
       </SecondRow>
       {/* {currencyBase && currencyQuote && (
         // <RateToggleButtonMobile onClick={() => setManuallyInverted(!manuallyInverted)}>
