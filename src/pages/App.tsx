@@ -7,16 +7,10 @@ import URLWarning from '../components/Header/URLWarning'
 import Popups from '../components/Popups'
 import DarkModeQueryParamReader from '../theme/DarkModeQueryParamReader'
 import Home from './Home'
-import Protocol from './Protocol'
-import PoolsOverview from './Pool/PoolsOverview'
-import TokensOverview from './Token/TokensOverview'
-import TopBar from 'components/Header/TopBar'
 import Simulator from './Simulator'
 import Dashboard from './Dashboard'
 import LandingPage from './LandingPage'
-import { RedirectInvalidToken } from './Token/redirects'
 import { LocalLoader } from 'components/Loader'
-import PoolPage from './Pool/PoolPage'
 import { ExternalLink, HideMedium, TYPE } from 'theme'
 import { useSubgraphStatus } from 'state/application/hooks'
 import { DarkGreyCard } from 'components/Card'
@@ -113,9 +107,6 @@ export default function App() {
         <AppWrapper>
           <URLWarning />
           <HeaderWrapper>
-            <HideMedium>
-              <TopBar />
-            </HideMedium>
             <Route path="/" component={Header} />
           </HeaderWrapper>
           <BodyWrapper>
@@ -124,11 +115,6 @@ export default function App() {
               <Switch>
                 <Route exact strict path="/" component={LandingPage} />
                 <Route exact strict path="/overview" component={Home} />
-                <Route exact strict path="/protocol" component={Protocol} />
-                <Route exact strict path="/pools" component={PoolsOverview} />
-                <Route exact strict path="/tokens" component={TokensOverview} />
-                <Route exact strict path="/tokens/:address" component={RedirectInvalidToken} />
-                <Route exact strict path="/pools/:address" component={PoolPage} />
                 <Route exact strict path="/simulator" component={Simulator} />
                 <Route exact strict path="/simulator/:address" component={Simulator} />
                 <Route exact strict path="/positions" component={Dashboard} />

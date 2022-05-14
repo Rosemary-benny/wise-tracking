@@ -230,23 +230,6 @@ const SearchSmall = ({ hideTokens = false, hidePools = false, ...rest }: Props) 
     <Hotkeys keyName="command+/" onKeyDown={handleDown}>
       {showMenu ? <Blackout /> : null}
       <Container>
-        <Wrapper {...rest}>
-          <StyledInput
-            type="text"
-            value={value}
-            onChange={(e) => {
-              setValue(e.target.value)
-            }}
-            placeholder="Search pools or tokens"
-            ref={ref}
-            onFocus={() => {
-              setFocused(true)
-              setShowMenu(true)
-            }}
-            onBlur={() => setFocused(false)}
-          />
-          {!focused && <TYPE.gray pl="2px">⌘/</TYPE.gray>}
-        </Wrapper>
         <Menu hide={!showMenu} ref={menuRef}>
           <AutoColumn gap="lg">
             <AutoColumn gap="sm">
