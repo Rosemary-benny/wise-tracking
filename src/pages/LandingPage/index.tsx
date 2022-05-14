@@ -10,7 +10,6 @@ import styled from 'styled-components'
 import { isAddress } from 'utils'
 import firebase from '../../firebase'
 import Banner from './Banner'
-import Features from './Features'
 
 const CONTENT_WIDTH = 1200
 const INPUT_HEIGHT = '66px'
@@ -243,8 +242,6 @@ const LandingPage = (props: RouteComponentProps<any>) => {
             </AddressInputWrapper>
             {/* </Fade> */}
           </AnimatedWrapper>
-
-          <Features />
         </ContentWrapper>
       </MainWrapper>
     </>
